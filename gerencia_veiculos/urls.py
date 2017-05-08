@@ -16,10 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from app_veiculos import views
+from app_veiculos import views, views_api
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
-    url(r'^$', views.index)
+    url(r'^$', views.index),
+
+    # api veiculos
+    # http://localhost:8000/api/v1/veiculos/
+    url(r'^api/v1/veiculos/$', views_api.veiculos_todos),
 ]
