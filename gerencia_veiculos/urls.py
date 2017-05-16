@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^$', views.index),
+    url(r'^ver_dados/', views.teste_get_dados),
 
     # api veiculos
     # http://localhost:8000/api/v1/veiculos/

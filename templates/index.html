@@ -5,10 +5,13 @@
   <title>Title</title>
 </head>
 <body>
-
+<h4>Veículos cadastrados e exibidos pelo django</h4>
   {% for veiculo in consulta_no_banco %}
     Veículo: {{ veiculo }} <br>
   {% endfor %}
+
+<hr>
+<a href="/ver_dados/">Exemplo - ver dados</a>
 
 </body>
 </html>
